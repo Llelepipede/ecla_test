@@ -1,0 +1,22 @@
+import "console";
+
+var alpha string = "@@ @ @ @ @   ";
+
+function cible(a: int) {
+    for (var i int, i < (a * 2) -1, i++) {
+        for (var y int, y < (a * 2) -1, y++) {
+            console.print(alpha[min( min( (a*2-2)-i, (a*2-2)-y), min(i,y))]);
+        }
+        console.print("\n");
+    }
+}
+
+function min(a:int,b:int) (int){
+    if (a > b){
+        return b;
+    }else {
+        return a;
+    }
+}
+
+cible(12);
